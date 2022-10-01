@@ -1,9 +1,15 @@
 import React from 'react'
+import Welcome from './components/Welcome'
+import './App.css'
+import { RocketCard } from './components/RocketCard'
 
 export default function App() {
   return (
-    <div>
-      <h1>You are about to embark on an unforgettable galactic adventure!<br/> Choose your flight and let’s go!</h1>
+    <div className='App'>
+      <Welcome/>
+      <div className='Main'>
+        <RocketCard/>
+      </div>
     </div>
   )
 }
