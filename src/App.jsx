@@ -8,7 +8,8 @@ export default function App() {
     <div className='App'>
       <Welcome/>
       <div className='Main'>
-        <RocketCard/>
+        <RocketCard text="Parker solar Prob"/>
+        <RocketCard text="Solar orbiter"/>
       </div>
     </div>
   )
