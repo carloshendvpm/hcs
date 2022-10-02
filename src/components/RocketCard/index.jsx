@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Rocket from '../../assets/img/rocket.png'
+import Rocket from '../../assets/img/rocket.svg'
+import RocketImg from '../../assets/img/Group.png'
 import { motion } from "framer-motion"
 import { useContext } from 'react'
 import { QuizContext } from '../../context/quiz'
@@ -17,13 +18,11 @@ export const RocketCard = (props) => {
   let stateCheck = move ? 'filed' : 'activated'
   return (
     <div className={`card card-${stateCheck}` }  onClick={() => dispatch({type: "CHANGE_STATE"})}>
-        { move ? 
           <motion.img 
-          animate={{ y: move ? -1000 : 1000 }} 
+          whileHover={{ y: move ? 1000 : -500 }}
           transition={{ type:'tween', duration: 5}}
-          src={Rocket}/> :
-          <img src={Rocket}/>
-        }
+          src={props.rocket}
+          />
         <p>{props.text}</p>
     </div>
   )

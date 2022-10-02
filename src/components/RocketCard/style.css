@@ -1,16 +1,24 @@
 .card-activated {
     border: 4px solid #F78E21;
     border-radius: 20px;
-    padding: 15px;
     margin: 50px;
     transition: 0.25s ease-in-out;
     cursor: pointer;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 213px;
+    height:213px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .card-activated p {
     font-size: 1.3rem;
     color: #fff;
     font-family: 'Roboto';
     font-weight: 600;
+    margin-top: 30px;
 }
 .card-activated:hover {
     background-color: #F78E21;
