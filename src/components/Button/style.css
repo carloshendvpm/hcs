@@ -1,0 +1,12 @@
+button {
+    background-color: #F78E21;
+    border: none;
+    width: 428px;
+    height: 50px;
+    border-radius: 32px;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
