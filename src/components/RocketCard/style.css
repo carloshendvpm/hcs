@@ -1,4 +1,4 @@
-.card-activated {
+.card-unselected {
     border: 4px solid #F78E21;
     border-radius: 20px;
     margin: 50px;
@@ -13,18 +13,18 @@
     justify-content: center;
     align-items: center;
 }
-.card-activated p {
+.card-unselected p {
     font-size: 1.3rem;
     color: #fff;
     font-family: 'Roboto';
     font-weight: 600;
     margin-top: 30px;
 }
-.card-activated:hover {
+.card-unselected:hover {
     background-color: #F78E21;
 }
 
-.card-filed {
+.card-selected {
     border: 4px solid #F78E21;
     border-radius: 20px;
     padding: 15px;
@@ -36,7 +36,21 @@
     color: #fff;
     font-family: 'Roboto';
     font-weight: 600;
+    width: 213px;
+    height:213px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.card-selected p {
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 600;
+    margin-top: 30px;
+}
+
 div:disabled{
     pointer-events:none;
     opacity:0.7;

@@ -10,7 +10,7 @@ const Question = () => {
     console.log(quizState)
 
   return (
-    <div> 
+    <div className="wrapper"> 
         <div id="question">
             <p>Pergunta {quizState.currentQuestion + 1} de {quizState.questions.length}</p>
             <h2>{currentQuestion.question}</h2>

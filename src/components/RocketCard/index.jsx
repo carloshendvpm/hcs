@@ -12,16 +12,16 @@ export const RocketCard = (props) => {
   const [selected, setSelected] = useState(true);
 
   function lidar(){
-    setSelected(!selected)
-    
+    props.onClick();
+    setMove(!move);
+    //dispatc h({type: "CHANGE_STATE"})
   }
-  let stateCheck = move ? 'filed' : 'activated'
+  
   return (
-    <div className={`card card-${stateCheck}` }  onClick={() => dispatch({type: "CHANGE_STATE"})}>
+    <div className={`card card-${props.isSelected ? 'selected' : 'unselected'}` }  onClick={() => lidar()}>
           <motion.img 
-          whileHover={{ y: move ? 1000 : -500 }}
-          transition={{ type:'tween', duration: 5}}
           src={props.rocket}
+          whileHover={{ scale: 1.5}}
           />
         <p>{props.text}</p>
     </div>

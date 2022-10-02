@@ -8,10 +8,7 @@
   color: #fff;
   font-size: 1.3rem;
 }
-.Main {
-  display: flex;
-  flex-direction: row;
-}
+
 .btn-active {
   background-color: #F78E21;
   border: none;
@@ -35,8 +32,4 @@
   font-weight: 600;
   font-size: 20px;
   cursor: not-allowed;
-}
-.rocketCard{
-  display: flex;
-  flex-direction: row;
 }
