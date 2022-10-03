@@ -36,8 +36,7 @@ The project is still under development and the next updates will focus on the fo
 - [ ] User badges to differents users levels
 
 
-<h2>Technologies Used</h2>
-This project was developed using:
+## Technologies Used
 - React ( Context API, Routes)
 - Framer Motion
 - JavaScript
